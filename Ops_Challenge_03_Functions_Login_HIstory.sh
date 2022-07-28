@@ -5,7 +5,10 @@
 # Purpose: Print login history of lab PC using functions and/or variables
 function print_login_history {
     last user
-    last}
+    last
+    var="the above is a printout of the login history of the ubuntu server" 
+    echo $var
+}
     
 # invocation:
 print_login_history
