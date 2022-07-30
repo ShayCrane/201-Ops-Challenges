@@ -3,12 +3,15 @@
 # Author: Shay Crane
 # Date of latest revisions 07/27/2022
 # Purpose: Print login history of lab PC using functions and/or variables
-function print_login_history {
+
+function=print_login_history
+$=User Login History
+
+print_login_history () {
+    echo $
     last user
     last
-    var="the above is a printout of the login history of the ubuntu server" 
-    echo $var
 }
-    
+
 # invocation:
 print_login_history
