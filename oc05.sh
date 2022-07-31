@@ -25,23 +25,32 @@
 # and at this url: https://itsfoss.com/how-to-find-the-process-id-of-a-program-and-kill-it-quick-tip/
 
 
-ps -fu shannon
+# ps -fu shannon
 
-VAR1=(YES NO)
-    echo Terminate process using PID? 
-    echo YES to continue, Enter NO to quit termination process
-    read ANSWER
-while [ANSWER = ${VAR1[1]}]
+# VAR1=(YES NO)
+#    echo Terminate process using PID? 
+#    echo YES to continue, Enter NO to quit termination process
+#    read ANSWER
+# while ANSWER = {$VAR1[1]}
+# do
+#    echo enter PID to terminate
+#    read PROCESSID
+#    kill -9 $PROCESSID
+#    echo $PROCESSID has been terminated. 
+# done
+
+ANSWER="y"  
+while [ "$ANSWER" == "y" ] 
 do
+    ps -fu shannon
     echo enter PID to terminate
-    read VAR3
-    sudo kill -9 $VAR3
-    echo $VAR3 has been terminated. 
+    read PROCESSID
+    kill -9 $PROCESSID
+    echo $PROCESSID has been terminated.
+    echo y to terminate another process, Enter n to quit termination tool.
+    read ANSWER
 done
-
-
-
-
+    echo exited process termination tool. 
 # ps -aux | less
 # above script found at https://www.cyberciti.biz/faq/show-all-running-processes-in-linux/
 
