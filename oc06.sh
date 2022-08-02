@@ -70,4 +70,10 @@ echo ${filenames[*]}
 # done 
 
 # # while { $ANSWER[@]=1 in "$userchoice" }
+<<<<<<< HEAD
 # # while [ {$ANSWER[@]} == 1 in "$userchoice" ]
+=======
+# # while [ {$ANSWER[@]} == 1 in "$userchoice" ]
+ 
+
+>>>>>>> refs/remotes/origin/main
