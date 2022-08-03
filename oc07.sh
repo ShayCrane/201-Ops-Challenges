@@ -1,9 +1,32 @@
-# # Ops Challenge - System Information
-# # Overview
-# # Objectives
+# Ops Challenge - System Information
+#
+# Objectives:
 # Create a script that…
-# Uses lshw to display system 
-# information to the screen about the following components:
+
+# Uses lshw to print system 
+# information to the screen about 
+# the system components listed at the bottom of this script.
+
+
+
+
+# Script: Ops Challenge 07 - lshw | grep
+# Author: Shay Crane
+# Date of latest revision: 08/02/2022
+# Purpose: to print out specified system info w/out irrelevant info. 
+
+
+
+
+#!/bin/bash
+
+
+
+lshw | grep "cpu"
+lshw | grep "memory"
+lshw | grep "display"
+lshw | grep "network" 
+
 
 # CPU:
 #
@@ -13,12 +36,7 @@
 # Bus info
 # Width
 #
-# # RAM:
-#
-# Description
-# Physical ID
-# Size
-# Display adapter:
+# RAM:
 #
 # Description
 # Product
@@ -51,8 +69,14 @@
 #
 # Uses grep to remove irrelevant information from the lshw output3
 # Add text to the output clearly indicating which component (such as CPU, RAM, etc.) the script is returning information about
-# Runs as Root; you may execute the shell script with sudo or as Root
-
+# Runs as Root; you may execute the shell script with or as Root
+# lshw -class CPU | grep -r ""Description Product Vendor Physical Bus Width Clock Capabilities Configuration Resources"" CPU/ 
+# lshw -class CPU | grep ""Product Vendor Physical Bus Width""
+#     lshw -class RAM | grep ""Description Product Vendor Physical Bus Width Clock Capabilities Configuration Resources""
+#        lshw -class Display | grep ""Description Product Vendor Physical Bus Width Clock Capabilities Configuration Resources"" 
+#            lshw -class Network | grep ""Description Product Vendor Physical Bus Logical Version Serial Size Capacity Width Clock Capabilities Configuration Resources""
+            
+# lshw -short -santitize | grep "CPU"          
 
 # lshw -short - prints device tree w/hardware paths
 
@@ -62,10 +86,10 @@
 # lshw -html = print in html format
 # lshw -xml = print in xml format
 # lshw -json = display device tree as JSON object
-
-# lshw -sanitize = do not print sensitive info
-
-
+#
+# lshw = do not print sensitive info
+#
+#
 # grep (Global Srch for Reg. Expression and Print Out)
 # checks for pattern matches (ex. text, anything)
 # Ex,: grep "eggs" muffin_recipe.tx
@@ -88,7 +112,9 @@
 #           and all files that include "egg", 
 #                and all text that appears on the line that matches "egg" (or the term)
 
-
-lshw grep 
+# lshw grep 
 # add text to output clearly indicating components (CPU, RAM, etc)
-# run as Root; execute shell script with sudo or Root
+# run as Root; execute shell script with or Root
+
+
+
