@@ -7,7 +7,7 @@
 
 
 
-ROBOCOPY C:\Users\j.thomson\Desktop\myprojectfiles C:\Users\j.thompson\Desktop\Backup
+ROBOCOPY C:\Users\j.thomson\Desktop\myprojectfiles C:\Users\j.thompson\Desktop\Backup /LOG:backup.txt
 
 
 # Jorge's Backup:
