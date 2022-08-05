@@ -6,11 +6,13 @@
 
 
 
-
+<#1.#>
 Get-EventLog -LogName System -After (Get-Date).AddHours(-24) | Out-File -FilePath C:\Users\Crane\Desktop\last_24.txt
 
+<#2.#>
 Get-EventLog -LogName System -EntryType Error | Out-File -FilePath C:\Users\Crane\Desktop\errors.txt
 
+<#5.#>
 $Events = Get-EventLog -LogName System -Newest 500 
 $Events | Groups-Object -Property Source | Format-Table -Wrap -AutoSize
 
@@ -27,7 +29,7 @@ Microsoft.PowerShell.Management documentation
 
 Tasks
 
-1, Output all events from the System event log that occurred in the last 24 hours to a file on your desktop named last_24.txt.
+1. Output all events from the System event log that occurred in the last 24 hours to a file on your desktop named last_24.txt.
 
 2. Output all “error” type events from the System event log to a file on your desktop named errors.txt.
 
