@@ -7,5 +7,9 @@
 - [Ops Challenge 04](https://github.com/ShayCrane/201_Ops_Challenges/blob/main/oc04.sh)
 - [Ops Challenge 05](https://github.com/ShayCrane/201_Ops_Challenges/blob/main/oc04.sh)
 - [Ops Challenge 06](https://github.com/ShayCrane/201_Ops_Challenges/blob/main/oc06.sh)
+- [Ops Challenge 07](https://github.com/ShayCrane/201_Ops_Challenges/blob/main/oc06.sh)
+- [Ops Challenge 08](https://github.com/ShayCrane/201_Ops_Challenges/blob/main/oc06.sh)
+- [Ops Challenge 09](https://github.com/ShayCrane/201_Ops_Challenges/blob/main/oc09.ps1)
+
 
 
