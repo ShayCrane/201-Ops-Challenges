@@ -1,6 +1,6 @@
 <# Script: Ops Challenge - Log Retrieval via Powershell #>
 <# Author: Shay Crane> #>
-<# Date of latest revision: 08/04/2022 #>
+<# Date of latest revision: 08/07/2022 #>
 <# Purpose: Retrieves System Logs #>
 
 
