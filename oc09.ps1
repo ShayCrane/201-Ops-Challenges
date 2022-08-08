@@ -44,8 +44,8 @@ event log. Ensure that the full lines are displayed (get rid of the
 
 Get-EventLog -LogName System -Newest 500 | Format-Table -Autosize
 
-<#The following is a script a classmate wrote that I kept on hand as a reference for No. 5, 
-but I found a different way to achieve the result parameters laid out in the assignment: 
+<#The following is a script that classmate, Jon Salhaus wrote that I kept on hand as a reference for No. 5, 
+but I found a different way to achieve the result parameters laid out in the assignment. 
 
 $Events = Get-EventLog -LogName System -Newest 500 
 $Events | Groups-Object -Property Source | Format-Table -Wrap -AutoSize#>
