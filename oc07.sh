@@ -1,33 +1,46 @@
-# Ops Challenge - System Information
-#
-# Objectives:
-# Create a script that…
+#!/bin/bash
 
-# Uses lshw to print system 
-# information to the screen about 
-# the system components listed at the bottom of this script.
-
-
-
-
-# Script: Ops Challenge 07 - lshw | grep
+# Script: Ops Challenge 07 - lshw | grep used to 
+#         view information about system components
 # Author: Shay Crane
 # Date of latest revision: 08/02/2022
 # Purpose: to print out specified system info w/out irrelevant info. 
 
 
 
-
-#!/bin/bash
-
-
-
-lshw | grep "cpu"
-lshw | grep "memory"
-lshw | grep "display"
-lshw | grep "network" 
+lshw -class CPU | grep 'product\|vendor\|physical\|bus\|width'
+    lshw -class RAM | grep 'description\|physical\|size'
+        lshw -class DISPLAY | grep 'description\|product\|vendor\|physical\|bus\|width\|clock\|capabilities\|configuration\|resources'
+            lshw -class NETWORK | grep 'description\|product\|vendor\|physical\|bus\|logical\|version\|serial\|size\|size\|capacity\|width\|clock\|capabilities\|configuration\|resources'
 
 
+# Ops Challenge - System Information
+#
+# Objectives:
+# Create a script that…
+
+# Uses <lshw> to display system information to the screen about the following components:
+#       - CPU
+#       - RAM
+#       - Display adapter
+#       - Network adapter
+#
+# uses grep to remove irrelevant information from the lshw output;
+# adds text to the output clearly indicating which component (such as CPU, RAM, etc.) 
+#   the script is returning information about; and
+# runs as Root; you may execute the shell script with sudo or as Root.
+
+
+# SCRIPT DRAFT FROM PREVIOUS SUBMISSION
+# lshw | grep "cpu"
+# lshw | grep "memory"
+# lshw | grep "display"
+# lshw | grep "network" 
+
+# lshw -short -disable PCI
+
+# DETAILS OF INFO TO GREP FROM LSHW: 
+#
 # CPU:
 #
 # Product
