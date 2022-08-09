@@ -11,5 +11,5 @@
 - [Ops Challenge 08](https://github.com/ShayCrane/201_Ops_Challenges/blob/main/oc08.sh)
 - [Ops Challenge 09](https://github.com/ShayCrane/201_Ops_Challenges/blob/main/oc09.ps1)
 - [Ops Challenge 10](https://github.com/ShayCrane/201_Ops_Challenges/blob/main/oc10.ps1)
-
+- [Ops Challenge 11](https://github.com/ShayCrane/201_Ops_Challenges/blob/main/oc11.ps1)
 
