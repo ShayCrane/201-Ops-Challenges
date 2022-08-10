@@ -12,4 +12,4 @@
 - [Ops Challenge 09](https://github.com/ShayCrane/201_Ops_Challenges/blob/main/oc09.ps1)
 - [Ops Challenge 10](https://github.com/ShayCrane/201_Ops_Challenges/blob/main/oc10.ps1)
 - [Ops Challenge 11](https://github.com/ShayCrane/201_Ops_Challenges/blob/main/oc11.ps1)
-
+- [Ops Challenge 12](https://github.com/ShayCrane/201_Ops_Challenges/blob/main/oc12.ps1)
