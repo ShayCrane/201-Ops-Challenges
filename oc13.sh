@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script: Ops Callenge 13 - Domain Analyzer
+# Script: Ops Callenge 1 - Domain Analyzer
 # Author: Shay Crane 
 # Date of latest revisions: 08/10/2022
 # PUrpose: a script that asks a user to type a domain, then displays document about
@@ -16,8 +16,8 @@ function domain_document {
     nslookup $domain_name >> domain_information.txt
     whois $domain_name >> domain_information.txt
     dig $domain_name >> domain_information.txt
+    host $domain_name >> domain_information.txt
 }
 
 domain_document 
 nano domain_information.txt
-done
