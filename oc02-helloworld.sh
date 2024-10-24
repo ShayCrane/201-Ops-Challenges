@@ -9,7 +9,7 @@
 # Main
 var="Hello World"
 
-#print var
+# print var
 echo "$var" 
 
 # End
